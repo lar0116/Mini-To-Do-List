@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini DOM To-Do</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <h1 id="title">Mini To-Do List</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button id="addBtn">Add</button>
+      <button id="delBtn">Delete Last</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <div id="listBox" class="list-box">
+      <ul id="taskList">
+        <li class="task-item">Example Task 1</li>
+        <li class="task-item">Example Task 2</li>
+      </ul>
+    </div>
+
+    <div class="stats">
+      <p>Total Items: <span id="totalCount">0</span></p>
+      <p>Done Items: <span id="doneCount">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
